@@ -3,7 +3,7 @@ import Link from 'next/link'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import { InstagramIcon } from '@/components/SocialIcons'
+import { InstagramIcon, PhoneIcon } from '@/components/SocialIcons'
 
 import portraitImage from '@/images/photos/formandos-2023.jpg'
 import airPlane from '@/images/logos/pappper-airplane.svg'
@@ -13,6 +13,8 @@ import image1 from '@/images/photos/love-friends.jpg'
 import image2 from '@/images/photos/kids.jpg'
 import image3 from '@/images/photos/girl.jpg'
 import school from '@/images/photos/school.jpg'
+import phone from '@/images/logos/phone-volume-solid.svg'
+
 
 function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -166,7 +168,7 @@ export default async function Home() {
               </SocialLink>
               <SocialLink
                 href="tel:313665-1975"
-                icon={MailIcon}
+                icon={PhoneIcon}
                 className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
               >
                 (31) 3665-1975

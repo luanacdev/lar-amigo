@@ -93,10 +93,6 @@ function MobileNavigation(
 ) {
   return (
     <Popover {...props}>
-      <Popover.Button className="group flex items-center rounded-full bg-white/90 px-4 py-2 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10 dark:hover:ring-white/20">
-        Menu
-        <ChevronDownIcon className="ml-3 h-auto w-2 stroke-zinc-500 group-hover:stroke-zinc-700 dark:group-hover:stroke-zinc-400" />
-      </Popover.Button>
       <Transition.Root>
         <Transition.Child
           as={Fragment}
@@ -130,11 +126,7 @@ function MobileNavigation(
                 Navigation
               </h2>
             </div>
-            <nav className="mt-6">
-              <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
-                <MobileNavItem href="/">Home</MobileNavItem>
-              </ul>
-            </nav>
+         
           </Popover.Panel>
         </Transition.Child>
       </Transition.Root>
@@ -175,7 +167,6 @@ function DesktopNavigation(props: React.ComponentPropsWithoutRef<'nav'>) {
   return (
     <nav {...props}>
       <ul className="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
-        <NavItem href="/">Home</NavItem>
         {/*<NavItem href="/articles">Articles</NavItem>
         <NavItem href="/projects">Projects</NavItem>
         <NavItem href="/speaking">Speaking</NavItem>
@@ -238,7 +229,7 @@ function Avatar({
   return (
     <Link
       href="/"
-      aria-label="Home"
+      aria-label=""
       className={clsx(className, 'pointer-events-auto')}
       {...props}
     >
