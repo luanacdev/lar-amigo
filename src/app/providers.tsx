@@ -49,6 +49,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
       <ThemeProvider attribute="class" disableTransitionOnChange>
         <ThemeWatcher />
         {children}
+        <meta name="google-site-verification" content="TFtYoSjWSb2OEL_C_mav4hUuU7omHJSe-RdGDiPFQfo" />
       </ThemeProvider>
     </AppContext.Provider>
   )
