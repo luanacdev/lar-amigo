@@ -8,11 +8,10 @@ import '@/styles/tailwind.css'
 export const metadata: Metadata = {
   title: {
     template: 'Lar amigo',
-    default:
-      'Lar amigo',
+    default: 'Lar amigo',
   },
   description:
-    'I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms.',
+    'Há 21 anos, a Associação LAR AMIGO iniciou sua jornada como um projeto de amor e dedicação às crianças. Desde então, temos resistido e crescido, tornando-nos um ponto de referência para pais trabalhadores que buscam um ambiente seguro e educativo para seus filhos.',
   alternates: {
     types: {
       'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
